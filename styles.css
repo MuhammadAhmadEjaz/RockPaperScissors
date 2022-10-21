@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+/* key frames */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #161b39;
+}
+
+.info-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:540px) {
+    .title-container {
+        flex-direction: column;
+    }
+    .score-container {
+        margin-top: 20px;
+    }
+}
+
+.title h1 {
+    color: white;
+    margin: 0;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    /* width: 150px; */
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.score-container h4 {
+    font-size: 32px;
+    margin: 0;
+    color: #5460a3;
+}
+
+.score-container h1 {
+    margin: 0;
+    color: #333856;
+}
+
+#play-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+#rock-button {
+    background-color: white;
+    padding: 60px;
+    border: 20px solid #4b63f3;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#rock-button img {
+    background-color: white;
+    width: 70px;
+}
+
+#paper-button {
+    background-color: white;
+    padding: 62px 60px;
+    border: 20px solid #e79819;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#paper-button img {
+    background-color: white;
+    width: 70px;
+}
+
+#scissors-button img {
+    background-color: white;
+    width: 70px;
+}
+
+#scissors-button {
+    background-color: white;
+    padding: 66px 60px;
+    border: 20px solid #d33450;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#computer-choice img {
+    background-color: white;
+    width: 70px;
+}
+
+#computer-choice {
+    display: none;
+    background-color: white;
+    padding: 66px 60px;
+    border: 20px solid #d33450;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#control-buttons-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-screen {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+.action-button {
+    padding: 10px 15px;
+    font-size: 22px;
+    color: white;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #333856;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="info-area">
+        <div class="title-container">
+            <div class="title">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="score-container">
+                <h4>SCORE</h4>
+                <h1 id="score">0</h1>
+            </div>
+        </div>
+    </div>
+    <div id="play-area">
+        <div id="rock-button">
+            <img src="./Assets/rock.png" alt="rock">
+        </div>
+        <div id="paper-button">
+            <img src="./Assets/paper.png" alt="paper">
+        </div>
+        <div id="scissors-button">
+            <img src="./Assets/scissors.png" alt="scissors">
+        </div>
+
+        <div id="draw-screen" class="result-screen">
+            <h1>It's a Draw 😒</h1>
+        </div>
+        <div id="win-screen" class="result-screen">
+            <h1>Congratulations! You Win 🥳</h1>
+        </div>
+        <div id="lose-screen" class="result-screen">
+            <h1>Sorry! You Lost 💔</h1>
+        </div>
+        <div id="computer-choice">
+            <img src="./Assets/scissors.png" alt="computer-choice">
+        </div>
+    </div>
+    <div id="control-buttons-area">
+        <button id="play-again" class="action-button" onclick="onAgainClick()">Play again</button>
+        <button id="next-round" class="action-button" onclick="onNextClick()">Next Round</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
